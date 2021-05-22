@@ -10,4 +10,4 @@ message
 - id INT NOT NULL AUTO_INCREMENT
 - user_id INT NOT NULL REFERENCES user(ID)
 - send_time DATETIME NOT NULL
-- text VARCHAR(2000)
+- message TEXT NOT NULL
