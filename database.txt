@@ -4,3 +4,10 @@ user
 - reg_time DATETIME NOT NULL
 - session_id VARCHAR(255) NOT NULL
 - name VARCHAR(255) NOT NULL
+
+message
+
+- id INT NOT NULL AUTO_INCREMENT
+- user_id INT NOT NULL REFERENCES user(ID)
+- send_time DATETIME NOT NULL
+- text VARCHAR(2000)
