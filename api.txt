@@ -21,7 +21,7 @@ GET /api/messages — получение списка сообщений
 Запрос: —
 
 Ответ: {
-    TODO
+    List<Message> messages;
 }
 
 POST /api/messages — отправка сообщения
@@ -36,6 +36,8 @@ POST /api/messages — отправка сообщения
 
 POST /api/users — создание пользователя при логине
 
-Запрос: TODO
+Запрос:
 
-Ответ: TODO
+- username
+
+Ответ: User / Exception (user already exist)
